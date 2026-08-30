@@ -1,0 +1,19 @@
+name: Validate skills
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate marketplace and skills
+        shell: pwsh
+        run: ./scripts/validate-skills.ps1

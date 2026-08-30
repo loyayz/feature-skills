@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature Review"
+  short_description: "显式执行双轴评审、缺陷裁决及授权范围内修复验证"
+  default_prompt: "使用 $feature-review，依据当前需求和实际变更完成双轴评审。"
+
+policy:
+  allow_implicit_invocation: true

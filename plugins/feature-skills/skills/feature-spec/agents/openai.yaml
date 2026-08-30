@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature Spec"
+  short_description: "显式收敛需求、设计方案并形成唯一最终 Spec"
+  default_prompt: "使用 $feature-spec，收敛这个需求并形成可直接实施的最终 Spec。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature Dev"
+  short_description: "显式依据实施就绪 Spec 选择执行方式并完成最小实现"
+  default_prompt: "使用 $feature-dev，依据这个已固化的实施就绪 Spec 完成实现和受影响范围验证。"
+
+policy:
+  allow_implicit_invocation: true

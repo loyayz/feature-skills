@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature Lifecycle"
+  short_description: "显式启动从需求设计到实现、整合与清理的全生命周期流程"
+  default_prompt: "使用 $feature-lifecycle，按全生命周期流程实现这个需求。"
+
+policy:
+  allow_implicit_invocation: false

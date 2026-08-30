@@ -1,0 +1,27 @@
+{
+  "name": "feature-skills",
+  "version": "0.1.0",
+  "description": "Reusable Codex skills maintained by loyayz.",
+  "author": {
+    "name": "loyayz",
+    "url": "https://github.com/loyayz"
+  },
+  "homepage": "https://github.com/loyayz/feature-skills",
+  "repository": "https://github.com/loyayz/feature-skills",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skills",
+    "workflows"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Loyayz Feature Skills",
+    "shortDescription": "Reusable workflows for Codex.",
+    "longDescription": "A maintained collection of reusable Codex skills and supporting resources.",
+    "developerName": "loyayz",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Show me the skills available from Loyayz Feature Skills."
+  }
+}
