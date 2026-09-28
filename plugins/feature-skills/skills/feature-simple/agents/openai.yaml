@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature Simple"
+  short_description: "围绕同一份 Spec 逐项收敛需求、实现并提交"
+  default_prompt: "使用 $feature-simple，基于这份 Spec 逐项讨论需求、实现并提交。"
+
+policy:
+  allow_implicit_invocation: false

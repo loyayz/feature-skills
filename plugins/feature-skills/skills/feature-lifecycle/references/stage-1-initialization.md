@@ -9,7 +9,7 @@
 - 已有需求文档：直接记录路径，不重复询问。
 - 没有需求文档：Stage 1 spec 兼作需求文档，生成后回填实际路径。
 - 用户提供的项目资料作为能力输入；资料是否不足以判断需求由能力决定。
-- slug 由用户指定值或原始请求中的英文关键词自动生成，不展示、不确认。分支名固定为 `feat/YYYY-MM-DD-<feature-slug>`。
+- slug 由用户指定值或原始请求中的英文关键词自动生成，不展示、不确认。分支名优先采用用户明确指定值；未指定时默认 `feat/YYYY-MM-DD-<feature-slug>`，不因宿主的通用分支名前缀约定改用其他前缀，不为例行命名请求确认。
 
 ## worktree 初始化
 
@@ -32,7 +32,7 @@ worktree 就绪后立即从下列规范骨架创建 `docs/feature/YYYY-MM-DD-<fe
 
 **创建日期**: YYYY-MM-DD
 **Worktree**: <worktree-path>
-**分支**: feat/YYYY-MM-DD-<feature-slug>
+**分支**: <实际 feature 分支名>
 **Base 分支**: <base-branch>
 **Initial Base SHA**: <initial-base-sha>
 **Delivery Base SHA**: <delivery-base-sha>

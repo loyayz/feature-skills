@@ -23,6 +23,7 @@ codex plugin add feature-skills@loyayz-feature-skills
 | Skill | 用途 | 调用方式 |
 |---|---|---|
 | `feature-lifecycle` | 显式启动最终 Spec、开发、评审、整合与清理的全生命周期流程。 | 仅显式 `$feature-lifecycle` |
+| `feature-simple` | 围绕同一份 Spec 逐项收敛需求、实现并提交，持续讨论下一项需求。 | 仅显式 `$feature-simple` |
 | `feature-spec` | 显式收敛需求、完成第一原理设计并形成唯一最终 Spec。 | 仅显式 `$feature-spec` |
 | `feature-dev` | 显式依据已固化的实施就绪 Spec 自主选择执行方式并完成实现与受影响验证。 | 仅显式 `$feature-dev` |
 | `feature-review` | 显式执行双轴评审，并按授权完成缺陷修复和验证。 | 仅显式 `$feature-review` |
@@ -36,7 +37,7 @@ codex plugin marketplace upgrade loyayz-feature-skills
 codex plugin add feature-skills@loyayz-feature-skills
 ```
 
-需要可复现安装时，将 `--ref master` 替换为已经发布的 Git tag，例如 `--ref v0.1.0`。
+需要可复现安装时，将 `--ref master` 替换为已经发布的 Git tag，例如 `--ref 0.1.0`。
 
 ## 仓库结构
 
@@ -114,7 +115,7 @@ codex plugin add feature-skills@loyayz-feature-skills
 2. 更新 `plugins/feature-skills/.codex-plugin/plugin.json` 中的 SemVer 版本。
 3. 将本次用户可见变化从 `CHANGELOG.md` 的 `Unreleased` 移入对应版本。
 4. 提交并推送 `master`。
-5. 创建与 Plugin 版本一致的 Git tag，例如 `v0.1.0`，并发布 GitHub Release。
+5. 创建与 Plugin 版本一致的 Git tag，例如 `0.1.0`，并发布 GitHub Release。
 
 ## License
 

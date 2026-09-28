@@ -1,6 +1,6 @@
 ---
 name: feature-lifecycle
-description: Use when the user explicitly invokes feature-lifecycle for isolated feature delivery from specification through development, review, integration, and cleanup; do not invoke it for ordinary feature requests.
+description: Deliver features in an isolated worktree through specification, development, review, integration, and cleanup. Use only on explicit user request for feature-lifecycle.
 ---
 
 # Feature Lifecycle
@@ -27,7 +27,7 @@ description: Use when the user explicitly invokes feature-lifecycle for isolated
 
 显式调用 `feature-dev`，传入实施就绪 spec、仓库、允许责任范围、受保护行为和适用项目指令。执行方式、技术映射、批次、代理预算和验证由它决定。
 
-返回需求变化时回 Stage 1；返回 `completed` 且接口检查通过后，保存实际修改、结果、验证证据及限制，产生实现进度观察点，自动进入 Stage 3。授权缺口、执行失败与用户停止边界按编排契约处理。
+返回需求变化时回 Stage 1；返回 `completed` 且接口检查确认本次实现已提交后，保存实际修改、提交 SHA、结果、验证证据及限制，产生实现进度观察点，自动进入 Stage 3。授权缺口、执行失败与用户停止边界按编排契约处理。
 
 ## Stage 3
 

@@ -1,6 +1,6 @@
 ---
 name: feature-review
-description: Use only when the user explicitly requests feature-review, or a user-started feature-lifecycle invokes it, to review a concrete change and perform authorized repairs or validation. Do not select it for ordinary task matching.
+description: Review changes and perform authorized repairs or validation. Use only on explicit user request for feature-review or invocation by a user-started feature-lifecycle.
 ---
 
 # Feature Review
